@@ -16,9 +16,10 @@
     <main class="container">
         <section>
             <div class="mb-3 w-50">
-                <input id="search-field" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search your phone">
+                <input id="search-field" type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Search your phone">
                 <div id="btn-search" class="btn btn-primary">Serach</div>
-              </div>
+            </div>
         </section>
         <section>
 
@@ -34,7 +35,27 @@
         <section id="loader" class="d-none">
             <div style="height: 400px;" class="d-flex justify-content-center align-items-center">
                 <div class="spinner-border text-success" role="status">
-                  <span class="visually-hidden">Loading...</span>
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Modal -->
+            <div class="modal fade" id="phoneDetailModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="phoneDetailModalLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="phone-detail" class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
